@@ -1,0 +1,49 @@
+{
+  "6256484009": [
+    {
+      "id": "359",
+      "topic": "Привет я еблан",
+      "description": "хых",
+      "telegram_user_id": "6256484009",
+      "telegram_username": "Ne_Artem_Britva",
+      "profile_photo_url": "/Assets/avatars\\6256484009.jpg",
+      "timestamp": "2025-04-26T01:18:28",
+      "status": "Закрыт",
+      "replies": [
+        {
+          "text": "jr",
+          "timestamp": "2025-04-25T21:31:18+03:00",
+          "sender": "admin",
+          "support_username": null
+        }
+      ],
+      "assigned_to": null
+    },
+    {
+      "id": "370",
+      "topic": "13",
+      "description": "321321",
+      "telegram_user_id": "6256484009",
+      "telegram_username": "Ne_Artem_Britva",
+      "profile_photo_url": "/Assets/avatars\\6256484009.jpg",
+      "timestamp": "2025-04-26T01:32:44",
+      "status": "Открыт",
+      "replies": [],
+      "assigned_to": null
+    }
+  ],
+  "6940681805": [
+    {
+      "id": "134",
+      "topic": "Прив",
+      "description": "1",
+      "telegram_user_id": "6940681805",
+      "telegram_username": "ASibDeveloper",
+      "profile_photo_url": "/Assets/avatars\\6940681805.jpg",
+      "timestamp": "2025-04-26T01:23:39",
+      "status": "Закрыт",
+      "replies": [],
+      "assigned_to": null
+    }
+  ]
+}

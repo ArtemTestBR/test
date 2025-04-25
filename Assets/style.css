@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+/* Сайдбар */
+.sidebar {
+    width: 350px;
+    background-color: #2b2d31;
+    color: #e1e1e1;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #333;
+}
+
+.sidebar-header {
+    padding: 15px 20px;
+    background-color: #232428;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #333;
+}
+
+.sidebar-header button {
+    background: none;
+    border: none;
+    color: #e1e1e1;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sidebar-search {
+    padding: 10px 15px;
+    border-bottom: 1px solid #333;
+}
+
+.search-input {
+    width: 100%;
+    padding: 8px 15px;
+    background-color: #1e1f22;
+    border: none;
+    border-radius: 5px;
+    color: #e1e1e1;
+    outline: none;
+}
+
+.sidebar-tabs {
+    display: flex;
+    border-bottom: 1px solid #333;
+}
+
+.tab {
+    flex: 1;
+    text-align: center;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.tab.active {
+    background-color: #404249;
+    border-bottom: 2px solid #5d8bf4;
+}
+
+.tab:hover {
+    background-color: #35373b;
+}
+
+.ticket-list {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.ticket-item {
+    padding: 15px 20px;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.ticket-item:hover {
+    background-color: #35373b;
+}
+
+.ticket-item.active {
+    background-color: #404249;
+}
+
+.ticket-title {
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.ticket-preview {
+    font-size: 13px;
+    color: #a3a3a3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Основное содержимое */
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #313338;
+    color: #e1e1e1;
+}
+
+.content-header {
+    padding: 15px 20px;
+    background-color: #232428;
+    border-bottom: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content-header button {
+    background: none;
+    border: none;
+    color: #e1e1e1;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.ticket-info {
+    padding: 20px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.message {
+    margin-bottom: 15px;
+    max-width: 70%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.message-incoming {
+    align-self: flex-start;
+    background-color: #404249;
+    padding: 10px 15px;
+    border-radius: 0 10px 10px 10px;
+}
+
+.message-outgoing {
+    align-self: flex-end;
+    background-color: #5d8bf4;
+    padding: 10px 15px;
+    border-radius: 10px 0 10px 10px;
+    color: white;
+}
+
+.message-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    flex-shrink: 0;
+}
+
+.message-content {
+    flex: 1;
+}
+
+.message-sender {
+    font-weight: 500;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.message-text {
+    font-size: 15px;
+}
+
+.message-time {
+    font-size: 12px;
+    color: #a3a3a3;
+    text-align: right;
+    margin-top: 5px;
+}
+
+.input-area {
+    padding: 15px;
+    background-color: #232428;
+    border-top: 1px solid #333;
+}
+
+.message-input {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #404249;
+    border: none;
+    border-radius: 5px;
+    color: #e1e1e1;
+    outline: none;
+    resize: none;
+    height: 50px;
+}
+.input-area.hidden {
+    display: none;
+}
+.tab.active {
+    background-color: #404249; /* Пример активной вкладки */
+}
+.ticket-item.active {
+    background-color: #404249; /* Пример активного тикета */
+}
+
+.input-area button {
+    padding: 10px 15px;
+    background: #4CAF50; /* Зелёный */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* При наведении */
+.input-area button:hover {
+    background: #45a049;
+}
+
+/* При нажатии */
+.input-area button:active {
+    background: #3d8b40;
+}
